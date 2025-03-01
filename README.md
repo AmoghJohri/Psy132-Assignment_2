@@ -11,7 +11,6 @@ This repository contains an implementation of a Q-learning agent that learns to 
 - [Scenarios Tested](#scenarios-tested)
 - [Dependencies](#dependencies)
 - [Usage](#usage)
-- [Results](#results)
 
 ## Overview
 This project uses the Q-learning algorithm to train an agent in a gridworld environment. The agent explores the grid, learning an optimal policy to reach the goal while minimizing penalties. The project visualizes the learned policy and evaluates the agent's performance in different scenarios.
@@ -60,6 +59,10 @@ Performance metrics include:
 5. **Obstacle Introduced:** A new obstacle is placed near the goal.
 6. **Exploration of Different Alpha Values:** Testing different learning rates.
 7. **Random Agent:** A baseline performance comparison with a random policy.
+
+For the following scenarios, the agent goes under a short re-training (starting from the previous policy). The training inclueds:
+- **Number of Episodes:** `100` (training episodes).
+- **Max Steps per Episode:** `1,000` (limits infinite loops).
 
 ## Dependencies
 Ensure you have the following Python libraries installed:
